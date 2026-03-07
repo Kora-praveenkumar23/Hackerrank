@@ -1,1 +1,14 @@
-
+code-1
+....https://www.hackerrank.com/challenges/revising-the-select-query/problem?isFullScreen=true
+answer:
+SELECT *
+FROM CITY
+WHERE CountryCode = 'USA'
+  AND Population > 100000;
+code-2
+....https://www.hackerrank.com/challenges/revising-the-select-query-2/problem?isFullScreen=true
+answer:
+SELECT NAME
+FROM CITY
+WHERE CountryCode = 'USA'
+  AND Population > 120000;
