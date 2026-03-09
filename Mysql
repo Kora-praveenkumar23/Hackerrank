@@ -23,3 +23,16 @@ answer:
 SELECT *
 FROM CITY
 WHERE ID=1661;
+code-5
+....https://www.hackerrank.com/challenges/japanese-cities-attributes/problem?isFullScreen=true
+answer:
+SELECT *
+FROM CITY
+WHERE COUNTRYCODE='JPN';
+code-6
+....https://www.hackerrank.com/challenges/japanese-cities-name/problem?isFullScreen=true
+answer:
+
+SELECT NAME
+FROM CITY
+WHERE CountryCode = 'JPN';
