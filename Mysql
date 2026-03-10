@@ -36,3 +36,21 @@ answer:
 SELECT NAME
 FROM CITY
 WHERE CountryCode = 'JPN';
+code-7
+....https://www.hackerrank.com/challenges/weather-observation-station-1/problem?isFullScreen=true
+answer:
+SELECT CITY, STATE
+FROM STATION;
+code-8
+....https://www.hackerrank.com/challenges/weather-observation-station-3/problem
+answer:
+SELECT DISTINCT CITY
+FROM STATION
+WHERE ID % 2 = 0;
+code-9
+....https://www.hackerrank.com/challenges/weather-observation-station-4/problem?isFullScreen=true
+answer:
+SELECT COUNT(CITY) - COUNT(DISTINCT CITY)
+FROM STATION;
+
+
