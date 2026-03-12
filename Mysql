@@ -76,5 +76,28 @@ WHERE LOWER(CITY) LIKE 'a%'
    OR LOWER(CITY) LIKE 'i%'
    OR LOWER(CITY) LIKE 'o%'
    OR LOWER(CITY) LIKE 'u%';
+code-12
+....https://www.hackerrank.com/challenges/weather-observation-station-7/problem?isFullScreen=true
+answer:
+SELECT DISTINCT CITY
+FROM STATION
+WHERE LOWER(CITY) LIKE '%a'
+   OR LOWER(CITY) LIKE '%e'
+   OR LOWER(CITY) LIKE '%i'
+   OR LOWER(CITY) LIKE '%o'
+   OR LOWER(CITY) LIKE '%u';
+code-13
+....https://www.hackerrank.com/challenges/weather-observation-station-8/problem?isFullScreen=true
+answer:
+SELECT DISTINCT CITY
+FROM STATION
+WHERE CITY REGEXP '^[aeiouAEIOU].*[aeiouAEIOU]$';
+code-14
+....https://www.hackerrank.com/challenges/weather-observation-station-9/problem?isFullScreen=true
+answer:
+SELECT DISTINCT CITY
+FROM STATION
+WHERE CITY REGEXP '^[^aeiouAEIOU]';
+
 
 
