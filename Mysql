@@ -110,6 +110,20 @@ answer:
 SELECT DISTINCT CITY
 FROM STATION
 WHERE CITY NOT REGEXP '^[aeiouAEIOU].*[aeiouAEIOU]$';
+code-17
+....https://www.hackerrank.com/challenges/weather-observation-station-12/problem?isFullScreen=true
+answer:
+SELECT DISTINCT CITY
+FROM STATION
+WHERE CITY REGEXP '^[^aeiouAEIOU].*[^aeiouAEIOU]$';
+code-18
+....https://www.hackerrank.com/challenges/more-than-75-marks/problem?isFullScreen=true
+answer:
+
+SELECT Name
+FROM STUDENTS
+WHERE Marks > 75
+ORDER BY RIGHT(Name, 3), ID;
 
 
 
