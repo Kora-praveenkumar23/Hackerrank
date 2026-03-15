@@ -124,6 +124,20 @@ SELECT Name
 FROM STUDENTS
 WHERE Marks > 75
 ORDER BY RIGHT(Name, 3), ID;
+code-19
+....https://www.hackerrank.com/challenges/name-of-employees/problem?isFullScreen=true
+answer:
+SELECT name
+FROM Employee
+ORDER BY name;
+code-20
+....https://www.hackerrank.com/challenges/salary-of-employees/problem?isFullScreen=true
+answer:
+SELECT name
+FROM Employee
+WHERE salary > 2000 
+  AND months < 10
+ORDER BY employee_id ASC;
 
 
 
