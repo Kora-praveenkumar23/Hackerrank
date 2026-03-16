@@ -138,6 +138,23 @@ FROM Employee
 WHERE salary > 2000 
   AND months < 10
 ORDER BY employee_id ASC;
+code-21
+....https://www.hackerrank.com/challenges/what-type-of-triangle/problem?isFullScreen=true
+answer:
+SELECT 
+    CASE 
+        WHEN A + B <= C OR A + C <= B OR B + C <= A THEN 'Not A Triangle'
+        WHEN A = B AND B = C THEN 'Equilateral'
+        WHEN A = B OR A = C OR B = C THEN 'Isosceles'
+        ELSE 'Scalene'
+    END
+FROM TRIANGLES;
+code-22
+....https://www.hackerrank.com/challenges/revising-aggregations-sum/problem?isFullScreen=true
+answer:
+SELECT SUM(POPULATION)
+FROM CITY
+WHERE DISTRICT = 'California';
 
 
 
