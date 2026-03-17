@@ -155,6 +155,26 @@ answer:
 SELECT SUM(POPULATION)
 FROM CITY
 WHERE DISTRICT = 'California';
+code-23
+....https://www.hackerrank.com/challenges/the-pads/problem?isFullScreen=true
+answer:
+-- Query 1: Alphabetical list of names with first letter of profession
+SELECT CONCAT(Name, '(', LEFT(Occupation, 1), ')')
+FROM OCCUPATIONS
+ORDER BY Name;
+
+-- Query 2: Count of each occupation, ordered by count then alphabetically
+SELECT CONCAT('There are a total of ', COUNT(Occupation), ' ', LOWER(Occupation), 's.')
+FROM OCCUPATIONS
+GROUP BY Occupation
+ORDER BY COUNT(Occupation), Occupation;
+code-24
+....https://www.hackerrank.com/challenges/revising-the-select-query/problem?isFullScreen=true
+answer:
+SELECT *
+FROM CITY
+WHERE CountryCode = 'USA'
+  AND Population > 100000;
 
 
 
