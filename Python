@@ -1,1 +1,23 @@
-
+code-1
+....https://www.hackerrank.com/challenges/python-arithmetic-operators/problem?isFullScreen=true
+answer:
+a=int(input())
+b=int(input())
+c=a+b
+d=a-b
+i=a*b
+print(c)
+print(d)
+print(i)
+code-2
+....https://www.hackerrank.com/challenges/py-if-else/problem?isFullScreen=true
+answer:
+n=int(input())
+if (n%2!=0):
+    print("Weird")
+elif (n%2==0) and 2<=n<=5:
+    print("Not Weird")
+elif(n%2==0) and (6<=n<=20):
+    print("Weird")
+else:
+    print("Not Weird")
