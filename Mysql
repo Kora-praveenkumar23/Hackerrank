@@ -175,6 +175,11 @@ SELECT *
 FROM CITY
 WHERE CountryCode = 'USA'
   AND Population > 100000;
-
+code-25
+....https://www.hackerrank.com/challenges/revising-aggregations-sum/problem?isFullScreen=true
+answer:
+SELECT SUM(POPULATION)
+FROM CITY
+WHERE DISTRICT = 'California';
 
 
