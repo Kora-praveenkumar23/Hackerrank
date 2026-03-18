@@ -21,3 +21,26 @@ elif(n%2==0) and (6<=n<=20):
     print("Weird")
 else:
     print("Not Weird")
+code-3
+....https://www.hackerrank.com/challenges/the-minion-game/problem?isFullScreen=true
+answer:
+def minion_game(string):
+    s=len(string)
+    vowel = 0
+    consonant = 0
+     
+    for i in range(s):
+        if string[i] in 'AEIOU':
+           vowel+=(s-i)
+        else:
+           consonant+=(s-i)
+                
+    if vowel < consonant:
+        print('Stuart ' + str(consonant))
+    elif vowel > consonant:
+        print('Kevin ' + str(vowel))
+    else:
+        print('Draw')
+    # your code goes here
+
+
