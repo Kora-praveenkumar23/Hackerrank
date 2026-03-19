@@ -42,5 +42,17 @@ def minion_game(string):
     else:
         print('Draw')
     # your code goes here
+code-4
+....https://www.hackerrank.com/challenges/merge-the-tools/problem?isFullScreen=true
+answer:
+def merge_the_tools(string, k):
+    while string: # while string is not None
+        seen = ''
+        s = string[0:k]
+        for c in s:
+            if c not in seen:
+                seen += c
+        print(seen)
+        string = string[k:]
 
 
