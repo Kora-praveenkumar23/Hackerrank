@@ -54,5 +54,19 @@ def merge_the_tools(string, k):
                 seen += c
         print(seen)
         string = string[k:]
+code-5
+....https://www.hackerrank.com/challenges/find-angle/problem?isFullScreen=true
+answer:
+import math
+
+def find_angle_mbc(ab, bc):
+    degree = round(math.degrees(math.atan(ab/bc)))
+    print(f"{degree}{chr(176)}")
+
+
+if __name__ == '__main__':
+    ab = int(input())
+    bc = int(input())
+    find_angle_mbc(ab, bc)
 
 
