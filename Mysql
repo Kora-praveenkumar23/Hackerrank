@@ -195,5 +195,15 @@ SELECT
         POW(MAX(LONG_W) - MIN(LONG_W), 2)
     ), 4) 
 FROM STATION;
+code-28
+....https://www.hackerrank.com/challenges/weather-observation-station-20/problem?isFullScreen=true
+answer:
+SELECT ROUND(AVG(LAT_N), 4)
+FROM (
+    SELECT LAT_N, ROW_NUMBER() OVER (ORDER BY LAT_N) as row_num,
+           COUNT(*) OVER () as total_count
+    FROM STATION
+) as ranked_data
+WHERE row_num IN (FLOOR((total_count + 1) / 2), CEIL((total_count + 1) / 2));
 
 
