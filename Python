@@ -82,5 +82,22 @@ if __name__ == '__main__':
     ab = int(input())
     bc = int(input())
     find_angle_mbc(ab, bc)
+code-6
+....https://www.hackerrank.com/challenges/no-idea/problem?isFullScreen=true
+answer:
+n, m = map(int, input().split())
+arr = list(map(int, input().split()))
+A = set(map(int, input().split()))
+B = set(map(int, input().split()))
+
+# Calculate happiness
+happiness = 0
+for x in arr:
+    if x in A:
+        happiness += 1
+    elif x in B:
+        happiness -= 1
+
+print(happiness)
 
 
