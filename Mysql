@@ -262,6 +262,12 @@ on m.hacker_id = h.hacker_id
 group by m.hacker_id, h.name
 having total_score > 0
 order by total_score desc, m.hacker_id;
+code-33
+....https://www.hackerrank.com/challenges/revising-aggregations-sum/problem?isFullScreen=true
+answer:
+SELECT SUM(POPULATION)
+FROM CITY
+WHERE DISTRICT = 'California';
 
 
 
