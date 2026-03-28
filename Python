@@ -112,5 +112,19 @@ for _ in range(n):
 # Output
 print(len(counts))
 print(*counts.values())
+code-9
+....https://www.hackerrank.com/challenges/word-order/problem?isFullScreen=true
+answer:
+n = int(input())
+counts = {}
+
+for _ in range(n):
+    word = input().strip()
+    counts[word] = counts.get(word, 0) + 1
+
+# Output
+print(len(counts))
+print(*counts.values())
+
 
 
