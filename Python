@@ -192,6 +192,10 @@ while n > 0:
     n //= 10
 
 print(rev)
+✅ Add Two Numbers
+a = int(input())
+b = int(input())
+print(a + b)
 
 
 
