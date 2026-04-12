@@ -196,7 +196,12 @@ print(rev)
 a = int(input())
 b = int(input())
 print(a + b)
-
+ ✅ Check Even or Odd
+n = int(input())
+if n % 2 == 0:
+    print("Even")
+else:
+    print("Odd")
 
 
 
